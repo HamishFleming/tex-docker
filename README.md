@@ -2,8 +2,28 @@
 
 This is an example of how to run a PHP application with [Nginx](https://www.nginx.com/), [PHP-FPM 7.4](https://www.php.net/releases/7_4_0.php), and [miktex](https://miktex.org/) using [Docker Compose](https://docs.docker.com/compose/).
 
-Composed of a simple PHP application to allow for uploading a tex file, and browsing the resulting pdf.
+<!-- https://github.com/HamishFleming/tex-docker/tree/cdcc72c32ec28e95b597d3fd5b66031260a1eb8d/imgs -->
+<!-- embed the image from that url -->
+![Docker Compose Example with Nginx, PHP-FPM 7.4, and miktex](imgs/tex.PNG)
 
+## Table of Contents
+- [Background](#background)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+    - [Running](#running)
+    - [Stopping](#stopping)
+    - [Configuration](#configuration)
+      - [Application Parameters](#application-parameters)
+      - [PHP Parameters](#php-parameters)
+      - [Nginx Parameters](#nginx-parameters)
+      - [miktex Parameters](#miktex-parameters)
+      - [Docker Parameters](#docker-parameters)
+- [References](#references)
+
+## Background
+
+Composed of a simple PHP application to allow for uploading a tex file, and browsing the resulting pdf.
 
 ## Getting Started
 
@@ -99,4 +119,3 @@ The following tables list the configurable parameters of the PHP application and
 - [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
 - [miktex](https://miktex.org/)
 - [Docker Compose Example with Nginx, PHP-FPM 7.4, and miktex](https://github.com/HamishFleming/tex-docker)
-
