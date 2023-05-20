@@ -1,0 +1,21 @@
+{
+    "name": "hamish/public",
+    "autoload": {
+        "psr-4": {
+            "Hamish\\Public\\": "public/",
+            "PhpFileUploader\\": "vendor/phpuploader/phpfileuploader/src"
+        },
+            "classmap": [
+                "vendor/phpuploader/phpfileuploader/src"
+            ]
+    },
+    "authors": [
+        {
+            "name": "Hamish Fleming",
+            "email": "fleming_hamish@yahoo.com"
+        }
+    ],
+    "require": {
+        "phpuploader/phpfileuploader": "^1.0"
+    }
+}

@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "8808:80"
+    volumes:
+      - .:/app/
+    links:
+      - php
+
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app/
+      - ./public/files:/files
+  latex:
+    image: miktex/miktex
+    volumes:
+      - .:/app/
+      - ./public/files:/miktex/work
+      - ./docker/miktex/monitor.sh:/usr/local/bin/monitor.sh
+    working_dir: /miktex/work
+    command: ["monitor.sh"]
